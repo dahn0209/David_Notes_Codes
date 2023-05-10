@@ -1,0 +1,47 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  } 
+  
+
+.tab {
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    background-color:blue;
+    color:white;
+}
+
+.tab ul{
+  list-style:none;
+
+}
+
+.tab ul li{
+  display: block;
+  float:left;
+  text-align:center;
+  padding:14px 16px
+}
+
+.tab .buttonSearch{
+  float:right;
+  padding:14px 16px
+}
+
+
+.active{
+  background-color: yellow;
+}
+
+
+@media screen and (max-width: 600px) {
+  .tab ul li, .tab .buttonSearch {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+} 

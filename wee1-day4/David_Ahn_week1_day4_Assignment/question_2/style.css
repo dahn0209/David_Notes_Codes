@@ -1,0 +1,25 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+
+  table {
+    border-collapse: collapse;
+    width:100%;
+    text-align: center;
+    border: solid 1px black;
+  }
+
+td {
+    border: solid 1px black;
+  }
+
+  th {
+    border: solid 1px black;
+  }
+
+
+ 
+
+ 

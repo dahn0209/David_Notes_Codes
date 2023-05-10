@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="/question_4/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <h1>Application for permission to date my daughter</h1>
+  <caption><b>Note:</b> Form is to be completed at least 21 days prior to date</caption>
+  <br><br>
+  <form>
+    <fieldset>
+      <br>
+      <div id="personalDetail">Personal Details</div>
+      <br>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter name here"><br>
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" placeholder="Enter address here"><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter email here"><br>
+      <label for="phonenumber">Phone Number:</label>
+      <input type="phonenumber" id="phonenumber" name="phonenumber" placeholder="Enter 10 digit number"><br>
+      <label for="iq">IQ:</label>
+      <input type="iq" id="iq" name="iq" placeholder="Enter IQ here"><br>
+      <div>Gender</div>
+      <br>
+      <input type="radio" id="male" name="gender" value="male" checked="checked" >
+      <label for="male">Male</label> <br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <input type="radio" id="other" name="other" value="other">
+      <label for="other">Other</label><br>
+      <br>
+      <label>Date for Proposed Outing:</label>
+      <input type="date" name='date'> <br>
+    </fieldset>
+    <fieldset>
+      <div>Check All That Apply</div>
+      <input type="checkbox" id="tattoss" name="tattoss" value="tattoss">
+      <label for="tattoss">I have tattoss and/or piercings</label> <br>
+      <input type="checkbox" id="years" name="years" value="JavaScript">
+      <label for="years">I am more than 2 years older than my daughter</label><br>
+      <input type="checkbox" id="own" name="own" value="own">
+      <label for="own">I own a panel van or V8 ute</label> <br>
+      <input type="checkbox" id="work" name="work" value="work" checked>
+      <label for="work">I work full-time</label><br>
+      <input type="checkbox" id="parents" name="parents" value="parents" checked>
+      <label for="parents">My parents are rich</label> <br>
+      <input type="checkbox" id="location" name="location" value="location" checked>
+      <label for="location">Is the date at a well lit public location</label><br>
+    </fieldset>
+
+    <fieldset>
+      <label for="political">Political Persuasion:</label>
+      <select name="political" id="political">
+        <optgroup>
+          <option value="left">Left Wing</option>
+          <option value="right">Right Wing</option>
+          <option value="conservative">Conservative</option>
+        </optgroup>
+      </select>
+      <label for="education">Education Level Completed:</label>
+      <select name="education" id="careducations">
+        <optgroup>
+          <option value="college">University/College</option>
+          <option value="highSchool">High School</option>
+          <option value="none">None</option>
+        </optgroup>
+      </select>
+    </fieldset>
+    <fieldset>
+      <div>Essay Section</div>
+      <div> In 50 words or more explain why you want to date my daugther </div><br>
+      <textarea placeholder="Enter Text Here" rows="4" cols="50"></textarea>
+      <br>
+      <div> Please upload contact details for 2 references </div>
+      <textarea placeholder="Enter Text Here" rows="4" cols="50"></textarea>
+      <br>
+      <br>
+      <label>Uphold Police Clerance Certificate, Bank Statement and Medical Certifiates here:</label>
+      <button type="file">Attach Files</button>
+      <!-- <input type="file" name='file'><br> -->
+      <br>
+      <br>
+    </fieldset>
+  </form>
+    <button type="submit">Send your application</button>
+  </form>
+
+ 
+</body>
+
+</html>

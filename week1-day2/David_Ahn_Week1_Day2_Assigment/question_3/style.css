@@ -1,0 +1,27 @@
+/* .romanNumneral:hover{
+    background-color:yellow
+} */
+
+/* td:nth-child(even):hover::first-letter{
+    color:red;
+    font-size:35px;
+} */
+
+ol .romanNumneral:hover{
+    background-color: yellow;
+}
+
+.romanNumneral ol{
+    background-color: white;
+}
+
+.alphabetNumeral li:hover::first-letter {
+    color:red;
+    font-size:35px;
+}
+
+.alphabetNumeral li .lowerCaseNumer li{
+    color:black;
+    font-size:16px;
+}
+

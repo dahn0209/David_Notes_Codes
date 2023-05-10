@@ -1,0 +1,23 @@
+<%# Path is relative to this template. Specify variables to pass into the partial %>
+<%- include("partials/header.ejs", {title:"Home"}); %>
+
+<%# Stylesheets only used by this template %>
+<link rel="stylesheet" href="/public/styles/home.css">
+
+<main>
+  <div>
+    <%# Evaluating expressions, referencing variables passed in %>
+    <h1> <%= `Welcome, ${username}.` %> </h1>
+    <%# ------------------------------------------------------------------------------ %>
+    <%# array forEach %>
+    <% posts.forEach(({title, body})=> { %>
+    <%- include("partials/post.ejs", {title:title, body:body}) %>
+    <% }) %>
+
+  </div>
+
+  <%- include("partials/sidebar.ejs"); %>
+</main>
+
+<script src="/public/scripts/home.js"></script>
+<%- include("partials/footer.ejs"); %>

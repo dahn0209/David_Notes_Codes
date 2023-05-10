@@ -1,0 +1,40 @@
+<%# Path is relative to this template. Specify variables to pass into the partial %>
+<%- include("partials/header.ejs", {title:"Home"}); %>
+
+<%# Stylesheets only used by this template %>
+<link rel="stylesheet" href="/public/styles/home.css">
+
+<main>
+  <div>
+    <%# Evaluating expressions, referencing variables passed in %>
+    <h1> <%= `Welcome, ${username}.` %> </h1>
+    <button id="req">Send Request</button>
+
+    <%# ------------------------------------------------------------------------------ %>
+    <%# array forEach %>
+    <% posts.forEach(({id, title, likes, comments})=> { %>
+    <%- include("partials/post.ejs", {likes:likes, title:title, comments:comments}) %>
+    <% }) %>
+
+    <hr>
+    <%# ------------------------------------------------------------------------------ %>
+    <%# Mixing JS logic into the template %>
+    <% const user = {};
+    for (let i = 0; i < 10; i++){
+      user[i] = `User${i}`;
+    }
+    const usersArr = Object.entries(user);
+    %>
+
+    <% for( let i = 0; i < usersArr.length; i++ ) { %>
+    <% if (i%2 === 0) { %>
+    <p>Key: <%= usersArr[i][0] %> Value: <%= usersArr[i][1] %> </p>
+    <% } %>
+    <% } %>
+  </div>
+
+  <%- include("partials/sidebar.ejs"); %>
+</main>
+
+<script src="/public/scripts/home.js"></script>
+<%- include("partials/footer.ejs"); %>

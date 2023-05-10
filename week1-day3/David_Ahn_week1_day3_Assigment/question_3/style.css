@@ -1,0 +1,33 @@
+body{
+    margin:0px;
+    height:100vh;
+}
+
+header{
+    background-color: rgb(49, 219, 49);
+    height:25%
+}
+
+footer{
+    background-color: yellow;
+    height:15%;
+}
+
+main{
+    height: 60%;
+  
+}
+
+nav {
+  background-color: rgb(208, 255, 160);
+  /* width:20% */
+}
+
+article{
+    /* width:60%; */
+}
+
+aside{
+    background-color: rgb(208, 255, 160);
+  /* width:20% */
+}
